@@ -1,0 +1,17 @@
+{
+  "name": "PneumoniaMNIST DenseNet-121 example",
+  "factory": "medical_densenet121",
+  "checkpoint": "../medcnn_runs/densenet121_full/model.pt",
+  "class_names": ["normal", "pneumonia"],
+  "input_size": [128, 128],
+  "input_channels": 3,
+  "mean": [0.485, 0.456, 0.406],
+  "std": [0.229, 0.224, 0.225],
+  "output_kind": "logits",
+  "dataset": "pneumoniamnist",
+  "metadata": {
+    "training_dataset": "Official PneumoniaMNIST 64 training split; head fitted by MedCNN pipeline",
+    "preprocessing_confirmed": true,
+    "class_order_confirmed": true
+  }
+}

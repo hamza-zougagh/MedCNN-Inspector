@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "medcnn-inspector"
+version = "0.2.0"
+description = "Model-agnostic 2D CNN feature inspection and controlled interventions"
+readme = "medcnn/docs/README.md"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = [
+    "torch>=2.6",
+    "torchvision>=0.21",
+    "medmnist>=3.0.2",
+    "scikit-learn>=1.5",
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "matplotlib>=3.9",
+    "streamlit>=1.40",
+    "Pillow>=10",
+]
+
+[project.scripts]
+medcnn-prepare = "medcnn.prepare:main"
+medcnn-train = "medcnn.pipeline:main"
+medcnn-experiment = "medcnn.experiment:main"
+
+[tool.setuptools]
+packages = ["medcnn"]

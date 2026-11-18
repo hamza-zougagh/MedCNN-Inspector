@@ -1,6 +1,6 @@
 # MedCNN Inspector
 
-MedCNN Inspector is a local workbench for trained **2D PyTorch classification CNNs**. Import a trusted tensor `state_dict`, pair it with an image dataset, explore 4D feature maps, and measure how internal edits change real model predictions. ResNet-18 and DenseNet-121 pneumonia classifiers are available as optional examples. The standalone package does not use the presentation project's `src/` code.
+MedCNN Inspector is a local workbench for trained **2D PyTorch classification CNNs**. Import a trusted tensor `state_dict`, pair it with an image dataset, explore 4D feature maps, and measure how internal edits change real model predictions. ResNet-18 and DenseNet-121 pneumonia classifiers are available as optional examples.
 
 ![Unified model and dataset workspace](medcnn/docs/medcnn_workspace.png)
 
